@@ -64,13 +64,13 @@ public class Player implements ICombat{
 
         if (currentWeapon.size() == 0) {
 
-            if ( intelligence >= random.nextInt(1,40) ) {
+            if ( intelligence >= random.nextInt(1,30) ) {
                 damageDone += noWeaponDamage * 2;
             }else {
                 damageDone += noWeaponDamage;
             }
         } else {
-            if ( intelligence >= random.nextInt(1,40) ) {
+            if ( intelligence >= random.nextInt(1,30) ) {
                 damageDone += ((noWeaponDamage + currentWeapon.get(0).getDamage()) * 2);
             }else {
                 damageDone += noWeaponDamage + currentWeapon.get(0).getDamage();
